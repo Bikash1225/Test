@@ -37,8 +37,8 @@ async def ALPHA(Client, message):
                 return
                 
 #@RitaaChk_Bot                
-            new_text = re.sub(r'Proxy - 🝂 Live! ✅', '', message.text)
-            new_text = re.sub(r'Time in Progress .* s', '', message.text)
+            new_text = message.text.replace('Proxy - 🝂 Live! ✅', '')
+            new_text = message.text.replace(r'Time in Progress .* s', '', message.text)
             new_text = re.sub(r'Checked by: .*]', '', message.text)
             new_text = re.sub(r'Bot by  - 🝂 Thkss', '', message.text)
             
